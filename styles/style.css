@@ -159,7 +159,7 @@
 }
 
 #search-image:hover {
-    content: url('./image/search_hover.png');
+    content: url('../image/search_hover.png');
     cursor: pointer;
 }
 
