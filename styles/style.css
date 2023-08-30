@@ -2,27 +2,27 @@
 
 @font-face {
     font-family: avenirMed;
-    src: url(./fonts/AvenirMedium.ttf);
+    src: url(../fonts/AvenirMedium.ttf);
 }
 
 @font-face {
     font-family: avenirBook;
-    src: url(./fonts/AvenirBook.ttf);
+    src: url(../fonts/AvenirBook.ttf);
 }
 
 @font-face {
     font-family: avenirRoman;
-    src: url(./fonts/avenir-roman.ttf);
+    src: url(../fonts/avenir-roman.ttf);
 }
 
 @font-face {
     font-family: avenirBlack;
-    src: url(./fonts/avenir-black.ttf);
+    src: url(../fonts/avenir-black.ttf);
 }
 
 @font-face {
     font-family: avenirLight;
-    src: url(./fonts/AvenirLight.ttf);
+    src: url(../fonts/AvenirLight.ttf);
 }
 
 :root {
@@ -275,7 +275,7 @@
 
 .banner-menu {
     position: relative;
-    background: url('./image/banner_Menu_1920_600.jpg') center/cover no-repeat;
+    background: url('../image/banner_Menu_1920_600.jpg') center/cover no-repeat;
     display: flex;
     overflow: hidden;
     width: 100%;
@@ -774,7 +774,7 @@ p {
 #menu-3-4 {
     color: #ffffff;
     position: relative;
-    background: url('./image/1920_808.jpg') center/cover no-repeat;
+    background: url('../image/1920_808.jpg') center/cover no-repeat;
     overflow-x: hidden;
 }
 
