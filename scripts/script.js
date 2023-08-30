@@ -10,8 +10,6 @@ $(document).ready(function(){
 })
 
 function toggleNavbarBackground() {
-    // Your code to toggle the background goes here
-    // For example:
     var navbar = document.querySelector('.navbar');
     navbar.classList.toggle('bg-white');
 }
