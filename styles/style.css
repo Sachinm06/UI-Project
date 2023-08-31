@@ -66,6 +66,13 @@
     margin-left: 10px;
 }
 
+.banner-arrow {
+    height: auto !important;
+    width: auto !important;
+    margin-left: 94px;
+    margin-top: -14px;
+}
+
 .learn-more-button::after {
     content: "";
     position: absolute;
@@ -78,6 +85,10 @@
 }
 
 /* ------------------------navbar------------- */
+nav {
+    position: sticky !important;
+    top: 0px !important;
+}
 
 .collapse.show {
     background-color: var(--1white);
@@ -130,6 +141,8 @@
     color: var(--0072ce) !important;
 }
 
+/* ----------------------search icon------------ */
+
 .search-icon {
     display: inline-block;
     position: relative;
@@ -146,22 +159,96 @@
     }
 }
 
-#search-image {
+#toggleImage {
     width: 100%;
     height: 100%;
     transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 991px) {
-    #search-image {
+    #toggleImage {
         margin-left: 30vw;
     }
 }
 
-#search-image:hover {
+/* .toggle-image:hover {
     content: url('../image/search_hover.png');
     cursor: pointer;
+} */
+
+/* ---------------- */
+
+.searchSection {
+    text-align: center;
+    margin-top: 50px;
 }
+
+.toggle-image {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.search {
+    margin-top: 20px;
+    position: absolute;
+    top: 115px;
+    left: 71vw;
+}
+
+.search__input {
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 16em;
+    transition: all ease-in-out .5s;
+    margin-right: -3rem;
+    font-family: avenirLight;
+
+}
+
+.search__input:hover,
+.search__input:focus {
+    box-shadow: 0px 4px 20px -1px #000000;
+}
+
+.search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+    color: #ccc;
+    font-size: 18px;
+    font-family: avenirLight;
+
+}
+
+.search__input:focus+.search__button {
+    background-color: #f0eeee;
+}
+
+.search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: .1em;
+}
+
+.search__button:hover {
+    cursor: pointer;
+}
+
+.search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    margin-top: auto;
+    fill: #b4b4b4;
+}
+
 
 /* ----------------------banner--------------------- */
 
@@ -188,11 +275,9 @@
 
 .slide-text {
     position: absolute;
-    top: 250px;
-    left: 25vw;
-    transform: translate(-50%, -50%);
+    top: 150px;
+    left: 8vw;
     color: var(--1white);
-    padding: 10px;
 }
 
 .slide-text h2 {
@@ -208,12 +293,6 @@
     font-weight: 500;
     margin-top: 15px;
     line-height: 26px;
-}
-
-@media screen and (max-width: 1050px) {
-    .slide-text {
-        margin-left: 50px;
-    }
 }
 
 @media screen and (max-width: 1050px) {
@@ -682,6 +761,10 @@ p {
 #viewAll {
     margin-bottom: 70px;
 }
+@media screen and (max-width: 665px) {
+    #viewAll{
+margin-bottom: 0px;    }
+}
 
 #menu2 .card-item {
     width: 232px;
@@ -779,14 +862,14 @@ p {
 }
 
 #menu-3-4 #row-1 {
-    background-color: #04a0a0;
-    opacity: 0.7;
+    background-color: #04a0a08a;
+    /* opacity: 0.7; */
     height: 830px;
 }
 
 #row-2 {
-    background: #002e5d;
-    opacity: 0.7;
+    background: #002e5d8a;
+    /* opacity: 0.7; */
     height: 830px;
 }
 
@@ -879,6 +962,10 @@ p {
 #menu4P {
     margin-left: 30px;
 }
+@media screen and (max-width: 665px) {
+    #menu4P  {
+margin-bottom: 10px;    }
+}
 
 @media screen and (max-width: 600px) {
     .calander-items p {
@@ -951,6 +1038,10 @@ svg {
 #menu-3-4 .learn-more-button3::after {
     background-color: #ffffff;
 }
+@media screen and (max-width: 600px) {
+    .menu4Button {
+margin-bottom: 0px;    }
+}
 
 /* ------------------footer---------------------- */
 
@@ -973,13 +1064,16 @@ svg {
 
 @media screen and (max-width: 990px) {
     .bg-grey h6 {
-        font-size: 8px;
-    }
+display: none;    }
 }
 
 .footer-div {
     margin-top: -10px;
     margin-bottom: -10px;
+}
+@media screen and (max-width: 770px) {
+    .form-footer{
+display: flex;    }
 }
 
 .form-footer input[type="text"] {
@@ -1030,11 +1124,14 @@ svg {
 .logo-part {
     border-right: 1px solid #f4f0ea;
     height: 153px;
+    text-align: start;
+    padding-left: 100px;
 }
 
 @media screen and (max-width: 770px) {
     .logo-part {
         border: none;
+        margin-bottom: 30px;
     }
 }
 
@@ -1045,6 +1142,14 @@ svg {
     gap: 20px;
     height: auto;
 }
+@media screen and (max-width: 770px) {
+    #social-media
+     {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 #social-media h5 {
     font-size: 16px;
@@ -1054,7 +1159,9 @@ svg {
 
 @media screen and (max-width: 990px) {
     #social-media h5 {
-        font-size: 8px;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
     }
 }
 
