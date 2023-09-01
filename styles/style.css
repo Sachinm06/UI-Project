@@ -81,6 +81,7 @@
     background-color: var(--41b6e6);
     top: 50%;
     right: 27px;
+    /* vertically center an element */
     transform: translateY(-50%);
 }
 
@@ -153,11 +154,6 @@ nav {
     z-index: 1000;
 }
 
-@media screen and (max-width: 990px) {
-    .search-icon {
-        display: none;
-    }
-}
 
 #toggleImage {
     width: 100%;
@@ -197,11 +193,18 @@ nav {
     top: 115px;
     left: 71vw;
 }
+@media screen and (max-width: 990px) {
+    .search {
+        position: absolute;
+        left: 8vw;
+        top: 385px;
+    }
+}
 
 .search__input {
-    background-color: #f4f2f2;
+    background-color: var(--1white);
     border: none;
-    color: #646464;
+    color: var(--59595c);
     padding: 0.7rem 1rem;
     border-radius: 30px;
     width: 16em;
@@ -209,6 +212,12 @@ nav {
     margin-right: -3rem;
     font-family: avenirLight;
 
+}
+@media screen and (max-width: 990px) {
+    .search__input {
+        box-shadow: 0px 4px 20px -1px #000000;
+
+    }
 }
 
 .search__input:hover,
@@ -218,35 +227,22 @@ nav {
 
 .search__input:focus {
     outline: none;
-    background-color: #f0eeee;
-}
-
-.search__input::-webkit-input-placeholder {
-    color: #ccc;
-    font-size: 18px;
-    font-family: avenirLight;
-
-}
-
-.search__input:focus+.search__button {
-    background-color: #f0eeee;
+    background-color: var(--1white);
 }
 
 .search__button {
     border: none;
-    background-color: #f4f2f2;
-    margin-top: .1em;
+    background-color: var(--1white);
 }
+
 
 .search__button:hover {
     cursor: pointer;
 }
 
 .search__icon {
-    height: 1.3em;
-    width: 1.3em;
+    height: 28px;
     margin-top: auto;
-    fill: #b4b4b4;
 }
 
 
@@ -757,13 +753,14 @@ p {
     margin-top: -14px;
 }
 
-
 #viewAll {
     margin-bottom: 70px;
 }
+
 @media screen and (max-width: 665px) {
-    #viewAll{
-margin-bottom: 0px;    }
+    #viewAll {
+        margin-bottom: 0px;
+    }
 }
 
 #menu2 .card-item {
@@ -795,20 +792,13 @@ margin-bottom: 0px;    }
 
 .image-text {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
+    /* commonly used to center an element both horizontally and vertically within its parent container. */
     transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1;
     color: #ffffff;
     font-size: 21px;
     width: 90%;
-    height: 85%;
-    display: flex;
-    text-align: start;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: end;
     font-family: avenirMed;
 }
 
@@ -962,9 +952,11 @@ margin-bottom: 0px;    }
 #menu4P {
     margin-left: 30px;
 }
+
 @media screen and (max-width: 665px) {
-    #menu4P  {
-margin-bottom: 10px;    }
+    #menu4P {
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1038,9 +1030,11 @@ svg {
 #menu-3-4 .learn-more-button3::after {
     background-color: #ffffff;
 }
+
 @media screen and (max-width: 600px) {
     .menu4Button {
-margin-bottom: 0px;    }
+        margin-bottom: 0px;
+    }
 }
 
 /* ------------------footer---------------------- */
@@ -1064,16 +1058,19 @@ margin-bottom: 0px;    }
 
 @media screen and (max-width: 990px) {
     .bg-grey h6 {
-display: none;    }
+        display: none;
+    }
 }
 
 .footer-div {
     margin-top: -10px;
     margin-bottom: -10px;
 }
+
 @media screen and (max-width: 770px) {
-    .form-footer{
-display: flex;    }
+    .form-footer {
+        display: flex;
+    }
 }
 
 .form-footer input[type="text"] {
@@ -1142,9 +1139,9 @@ display: flex;    }
     gap: 20px;
     height: auto;
 }
+
 @media screen and (max-width: 770px) {
-    #social-media
-     {
+    #social-media {
         display: flex;
         flex-direction: column;
     }

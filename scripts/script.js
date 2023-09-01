@@ -9,16 +9,11 @@ $(document).ready(function(){
     })
 })
 
-// function toggleNavbarBackground() {
-//     var navbar = document.querySelector('.navbar');
-//     navbar.classList.toggle('bg-white');
-// }
-
 // ------------search icon--------------
 
 const imageElement = document.getElementById('toggleImage');
 const inputBox = document.getElementById('inputBox');
-const imageSrcArray = ["./image/search.png", "./image/search_close.jpg"]; // Add more image URLs if needed
+const imageSrcArray = ["./image/search.png", "./image/search_close.jpg"];
 let currentImageIndex = 0;
 
 imageElement.addEventListener('click', () => {
