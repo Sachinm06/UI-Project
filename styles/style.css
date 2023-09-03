@@ -209,7 +209,7 @@ nav {
     border-radius: 30px;
     width: 16em;
     transition: all ease-in-out .5s;
-    margin-right: -3rem;
+    margin-right: -4rem;
     font-family: avenirLight;
 
 }
@@ -244,6 +244,10 @@ nav {
     height: 28px;
     margin-top: auto;
 }
+
+
+/*  */
+
 
 
 /* ----------------------banner--------------------- */
