@@ -242,8 +242,7 @@ nav {
 
 .search__button {
     border: none;
-    background-color: var(--1white);
-}
+background: transparent;}
 
 
 .search__button:hover {
