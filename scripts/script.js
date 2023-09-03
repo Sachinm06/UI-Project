@@ -1,9 +1,9 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $('.slider-img').slick({
-        dots:true,
-        arrows:false,
-        autoplay:true,
-        autoplaySpeed:1500,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 1500,
         // fade:true,
         // fadeSpeed:1000
     })
@@ -28,8 +28,12 @@ imageElement.addEventListener('click', () => {
 function record() {
     var recognition = new webkitSpeechRecognition();
     recognition.lang = "en-GB";
+    console.log(recognition);
+
     recognition.onresult = function (event) {
-        document.getElementById('speechToText').value=event.results[0][0].transcript;    
+        speech = document.getElementById('speechToText').value = event.results[0][0].transcript;
+        console.log(event.results);
+
     }
     recognition.start();
 }

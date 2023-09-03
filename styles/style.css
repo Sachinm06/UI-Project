@@ -100,6 +100,14 @@ nav {
 @media screen and (max-width: 991px) {
     #navbarNav {
         margin-left: 50px;
+
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .search-area {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -163,7 +171,7 @@ nav {
 
 @media screen and (max-width: 991px) {
     #toggleImage {
-        margin-left: 30vw;
+        /* margin-left: 30vw; */
     }
 }
 
@@ -191,13 +199,14 @@ nav {
     margin-top: 20px;
     position: absolute;
     top: 115px;
-    left: 71vw;
+    left: 71vw !important;
 }
+
 @media screen and (max-width: 990px) {
-    .search {
+    #inputBox {
         position: absolute;
-        left: 8vw;
         top: 385px;
+        left: auto !important;
     }
 }
 
@@ -213,6 +222,7 @@ nav {
     font-family: avenirLight;
 
 }
+
 @media screen and (max-width: 990px) {
     .search__input {
         box-shadow: 0px 4px 20px -1px #000000;
