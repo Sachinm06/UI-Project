@@ -272,11 +272,15 @@ nav {
     z-index: 3;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 991px) {
     #inputBox {
-        position: absolute;
-        top: 385px;
-        left: auto !important;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #inputBox {
+        margin-left: -101px;
     }
 }
 
