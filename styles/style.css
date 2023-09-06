@@ -234,15 +234,12 @@ nav {
 @media (max-width: 991px) {
     .custom-input {
         display: block;
-        /* Show the input */
     }
 }
 
-/* Hide the input on screens wider than 991px */
 @media (min-width: 992px) {
     .custom-input {
         display: none;
-        /* Hide the input */
     }
 }
 
@@ -768,6 +765,7 @@ p {
 
 .learn-more-button4:hover {
     color: var(--41b6e6);
+
 }
 
 .button-container4 button {
@@ -777,6 +775,7 @@ p {
 
 .button-container4 :hover button {
     background-color: var(--0072ce);
+    border: var(--0072ce) solid 1px;
 
 }
 
@@ -803,6 +802,14 @@ p {
     border: var(--0072ce) solid 1px;
 }
 
+.viewAllbtn:hover {
+    color: var(--1white);
+
+    background: var(--41b6e6);
+    border: var(--1white) solid 1px;
+
+}
+
 .arrow2 {
     width: 35px;
     height: 15px;
@@ -810,6 +817,12 @@ p {
 
 .learn-more-button3::after {
     background-color: var(--0072ce);
+
+}
+
+.learn-more-button3:hover:after {
+    background-color: var(--1white);
+
 }
 
 /* ------------ */
@@ -1089,7 +1102,7 @@ p {
 
 @media screen and (min-width: 767px) and (max-width: 801px) {
     .btn-4 {
-      margin-right: 72px;
+        margin-right: 72px;
     }
 }
 
@@ -1277,16 +1290,26 @@ svg {
 
 #menu-3-4 .button-container3 a {
     padding-right: 0;
-    color: #ffffff;
+    color: var(--1white);
 }
 
 #menu-3-4 .learn-more-button3 {
-    color: #ffffff;
-    border: #ffffff solid 1px;
+    color: var(--1white);
+    border: var(--1white) solid 1px;
+}
+
+#menu-3-4 .viewAllbtn2:hover {
+    /* color: var(--41b6e6); */
+    border: var(--0072ce) solid 1px;
+    background: var(--0072ce);
 }
 
 #menu-3-4 .learn-more-button3::after {
-    background-color: #ffffff;
+    background-color: var(--1white);
+}
+
+#menu-3-4 .viewAllbtn2:hover::after {
+    background-color: var(--59595c);
 }
 
 @media screen and (max-width: 600px) {
@@ -1383,10 +1406,18 @@ svg {
     padding-left: 100px;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 767px) {
+    .logo-part {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
     .logo-part {
         border: none;
-        margin-bottom: 30px;
+        padding-left: 0px;
     }
 }
 
@@ -1426,6 +1457,13 @@ svg {
     align-items: flex-start;
     flex-direction: column;
     padding-left: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    #subscribe {
+        display: flex !important;
+        align-items: center !important;
+    }
 }
 
 @media screen and (max-width: 990px) {
